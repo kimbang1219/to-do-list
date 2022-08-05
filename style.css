@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 body {
     padding:0;
@@ -30,7 +37,7 @@ body {
 }
 
 h1 {
-    font-family: 'Y_Spotlight';
+    font-family: 'KOTRAHOPE';
     font-size:3rem;
     font-weight: 700;
     padding:20px 0;
@@ -154,4 +161,14 @@ button{
 }
 .fa-rotate-left,.fa-trash-can{
     font-size:1.3rem;
+}
+
+
+@media (max-width:575px) {
+    .container{
+        width: 90%;
+    }
+    h1{
+        text-align: center;
+    }
 }
