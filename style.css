@@ -41,6 +41,7 @@ h1 {
     font-size:3rem;
     font-weight: 700;
     padding:20px 0;
+    text-align: center;
 
 }
 
@@ -168,7 +169,5 @@ button{
     .container{
         width: 90%;
     }
-    h1{
-        text-align: center;
-    }
+
 }
