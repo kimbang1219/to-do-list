@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'WandohopeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    padding:0;
+    margin:0;
+    /* background:#2C6CBF; */
+    background: url(./images/bg.jpg);
+    background-size:contain;
+}
+
+.container {
+    background:#fff;
+    height:90vh;
+    border-radius: 25px;
+    margin-top:3em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+h1 {
+    font-family: 'Y_Spotlight';
+    font-size:3rem;
+    font-weight: 700;
+    padding:20px 0;
+
+}
+
+#task-area{
+    border:1px solid #ccc;
+    margin-top: 20px;
+}
+#tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    position:relative;
+}
+
+#tabs div {
+    padding:1em;
+    cursor: pointer;
+}
+
+#tabs > #under-line {
+    padding:0;
+    position: absolute;
+    background-color:#ff83b1;
+    height: 4px;
+    left: 0;
+    width: 64px;
+    top:52px;
+    transition:.5s;
+
+}
+label {
+    display: none;
+}
+
+
+input::placeholder{
+    color:rgb(187, 187, 187);
+}
+#input-txt {
+    border:1px solid rgb(207, 207, 207);
+    width: 80%;
+    outline:none;
+    box-shadow: none;
+    transition: .5s;
+    padding:5px;
+}
+
+#input-txt:focus{
+    border:2px solid #face9e;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 12px;
+}
+
+#add-btn{
+    color:#7470ff;
+    transition: .5s;
+}
+#add-btn:hover{
+    color:#514bfd;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task>div:first-child {
+padding:1em;
+}
+
+.task-done>div span{
+    text-decoration: line-through;
+}
+
+.task-btn-box{
+    display: flex;
+}
+button{
+    border:none;
+    background-color: #fff;
+}
+.task-btn-box button{
+    width: 5em;
+    transition: 0.5s;
+
+
+}
+
+.task-btn-box button:first-child:hover{
+    background: #dad9fd;
+}
+
+.task-btn-box button:nth-of-type(2):hover{
+    background:#ffbed6;
+}
+
+
+
+.task-done {
+    background:#dadada;
+}
+
+.fa-circle-check {
+    color:#8583f7;
+}
+.fa-trash-can{
+    color:#fb5894;
+}
+.fa-rotate-left{
+    color:#919191;
+}
+.fa-circle-plus{
+    vertical-align: middle;
+}
+.fa-circle-plus{
+    font-size: 2rem;
+}
+.fa-circle-check{
+    font-size:1.5rem;
+}
+.fa-rotate-left,.fa-trash-can{
+    font-size:1.3rem;
+}
